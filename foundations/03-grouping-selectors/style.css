@@ -1,0 +1,18 @@
+/* rule 1 */
+.button.one {
+    color: white;
+    background-color: black;
+}
+
+/* rule 2 */
+.button.two {
+    background-color: yellow;
+}
+
+/* rule for both, using grouping selector */
+.button.one,
+.button.two
+        {
+    font-size: 28px;
+    font-family: 'Times New Roman', sans-serif;
+}
