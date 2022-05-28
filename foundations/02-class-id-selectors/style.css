@@ -1,0 +1,19 @@
+p {
+    background-color: #ff5050;
+    font-family: "Verdana", "Deja Vu Sans", sans-serif;
+}
+
+.Three {
+    font-size: 24px;
+}
+
+#NumberTwo {
+    color: blue; 
+    font-size: 36px;
+}
+
+#NumberFour {
+    background-color: #75d475;
+    font-size: 24px;
+    font-weight: bold;
+}
