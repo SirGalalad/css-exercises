@@ -26,3 +26,71 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/* beginning of edits */
+
+body {
+  display: flex;
+  flex-direction: column;
+} /* this was CORRECT */
+
+.header {
+  font-size: 32px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  /* This was CORRECT aside from padding which they have as "0 16px" not just 16px like I do */
+}
+
+.body {
+  flex: 1;
+  display: flex;
+}
+
+.sidebar {
+  flex-shrink: 0;
+  padding: 16px;
+  /* here they had you make a parent div: "body" and then nestle the sidebar in that. I tried adding the attributes used for body into sidebar and it wouldn't give the same results. DON'T UNDERSTAND WHY */
+}
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* they added the margin and padding attributes to get it up and tight to the top left. I didn't initially see the need for that */
+}
+
+li {
+  margin-bottom: 16px;
+  /* They added this to space the list out a bit, I can see why they wanted it. */
+}
+
+a {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  /* this is all CORRECT */
+}
+
+.container {
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 16px;
+  margin: 16px;
+  width: 300px;
+  /* This was difficult for me to understand exaclty why it works and I'm not convinced that I do get it. They had you make specific divs for the container and I had trouble ensuring that the 
+  ".body" div was actually closed, it got lost a little bit with how much stuff there was.*/
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* footer was CORRECT as well */
+}
